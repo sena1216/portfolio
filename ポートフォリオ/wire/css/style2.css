@@ -1,0 +1,101 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+      margin:0;
+  padding: 0;
+}
+html, body{
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+    background-color: #BAF3FC;
+}
+
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 50px; /* 高さを50pxに指定 */
+    padding: 50px 0px; /*ヘッダーに上下左右それぞれ余白を指定*/
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+    background-color:#E9FEFF;
+}
+.techlogo{
+    margin-right: 0px;
+    height: 100px;
+    background-color: #E2E2E2;
+    width: 100px;
+    text-align: center;
+}
+
+header .divmenu .menu li + li {
+    margin-left: 60px; /* メニューそれぞれに間隔をあけるため */
+}
+.menu{
+    background-color: #BAF3FC;
+}
+main {
+    height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+    width: 100%;
+}
+.divmenu{
+    margin-bottom: 50px;
+}
+.menu{
+position: absolute;
+display: flex;
+right: 30px;
+justify-content:space-between;
+margin: 0px 30px 0px  0px;
+width: 600px;
+height: 50px;
+list-style: none;
+align-items: center;
+padding-right: 60px;
+border-radius: 10px;/*角の丸み*/
+padding-left: 50px;
+}
+ul{
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+}
+h2{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 64px;
+}
+.production{
+    border: solid 3px #E2E2E2;
+    border-radius: 20px;
+    background-color: #E2E2E2;
+    display: flex;
+    margin: 50px 100px 100px 100px;
+    justify-content: space-between;
+    padding: 150px 150px 50px 150px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 150px ;
+}
+.gla1{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;/*角の丸み*/
+}
+.pdt1{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: 30% 0%;
+border-radius: 10px;/*角の丸み*/
+}
+footer{
+    margin: 0;
+    text-align: center;
+    background-color: white;
+}
